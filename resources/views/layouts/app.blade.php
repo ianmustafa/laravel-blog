@@ -57,8 +57,12 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <h6 class="dropdown-header">{{ __('Admin Panel') }}</h6>
                                     <a class="dropdown-item" href="{{ route('admin.home') }}">
-                                        {{ __('Admin Panel') }}
+                                        {{ __('Home') }}
+                                    </a>
+                                    <a class="dropdown-item" href="{{ route('admin.posts.index') }}">
+                                        {{ __('Posts') }}
                                     </a>
 
                                     <div class="dropdown-divider"></div>

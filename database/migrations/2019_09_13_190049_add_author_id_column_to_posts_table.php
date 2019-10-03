@@ -14,7 +14,7 @@ class AddAuthorIdColumnToPostsTable extends Migration
     public function up()
     {
         Schema::table('posts', function (Blueprint $table) {
-            $table->unsignedBigInteger('author_id')->after('content')->index();
+            $table->unsignedBigInteger('author_id')->after('content')->nullable()->index();
         });
     }
 
